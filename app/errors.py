@@ -14,5 +14,5 @@ class NotWearingMaskError(Exception):
     pass
 
 
-class VaccineMaskError(VaccineError, NotWearingMaskError):
+class VaccineMaskError(Exception):
     pass
