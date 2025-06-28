@@ -12,3 +12,7 @@ class OutdatedVaccineError(VaccineError):
 
 class NotWearingMaskError(Exception):
     pass
+
+
+class VaccineMaskError(VaccineError, NotWearingMaskError):
+    pass
