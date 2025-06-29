@@ -19,9 +19,7 @@ def go_to_cafe(friends: list, cafe: Cafe) -> str:
 
     if vaccine_errors == 0 and mask_errors == 0:
         return f"Friends can go to {cafe.name}"
-    messages = []
     if vaccine_errors > 0:
-        messages.append("All friends should be vaccinated")
+        return "All friends should be vaccinated"
     if mask_errors > 0:
-        messages.append(f"Friends should buy {mask_errors} masks")
-    return "\n".join(messages)
+        return f"Friends should buy {mask_errors} masks"
